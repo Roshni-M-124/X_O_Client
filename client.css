@@ -3,7 +3,11 @@ body {
     font-family: 'a Atmospheric';
     font-weight: 500;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -14,26 +18,24 @@ body {
 
 .board {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    gap: 15px;
-    width: 330px;
-    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vw;
+    width: 90vw;          
+    max-width: 400px;     
     background: #e1e8f0;
-    padding: 15px;
+    padding: 4vw;
     border-radius: 20px;
 }
 
 .cell {
-    width: 100px;
-    height: 100px;
+    aspect-ratio: 1 / 1;
     background: #ffffff;
     border-bottom: 6px solid #d1d8e0;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 36px;
-    font-weight: bold;
+    font-size: clamp(24px, 8vw, 36px);
     cursor: pointer;
 }
 
