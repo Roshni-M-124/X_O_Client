@@ -1,6 +1,6 @@
 let playerSymbol = '';
 let clearmessage = false;
-const socket = new WebSocket("wss://f527-2409-40f4-3103-f44e-124c-1509-8941-b1b0.ngrok-free.app");
+const socket = new WebSocket("wss://4b64-2409-40f4-3111-4486-a683-1c74-5ad8-504b.ngrok-free.app");
 const cells = document.querySelectorAll('.cell');
 
 socket.onopen = function() {
