@@ -28,6 +28,7 @@ socket.onmessage = function(event) {
     if (data.type === "reset") {
     clearBoard();
     document.getElementById("message").textContent = "Player X should start";
+    clearmessage = true; 
     }
     if (data.type === "opponent_left") {
     document.getElementById("message").textContent = "";
